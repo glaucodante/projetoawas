@@ -32,26 +32,22 @@ header {
     display: flex;
     align-items: center;
 
+
 }
 
 .logo {
 
     width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .logoimg {
-    width: 80px;
-    height: 80px;
-    background-color: #b28756;
-    border-radius: 40px;
-    /*temporario*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
-
+    width: 70px;
+    height: 70px;
 }
 
 /* ESTE ELEMENTO FOI COLOCADO PARA Q O BOTÃO DE MENU NÃO APAREÇA NO COMPUTADOR */
@@ -732,7 +728,7 @@ CSS DE ÁREAS ESPECÍFICAS
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin-top: 40px;
 }
 
 .section-testimonials .pointer {
@@ -947,8 +943,7 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-fact-line {
     width: 20px;
     border-bottom: 2px solid #b28756;
-    text-transform: uppercase;
-    font-size: 18px;
+    margin: auto;
 }
 
 .section-fact h4 {
@@ -1370,20 +1365,87 @@ CSS DE ÁREAS ESPECÍFICAS
         flex-wrap: wrap;
     }
 
-.section-price--item {
-    margin-left: 20px;
-    min-width: calc(100% - 40px);
-    margin-bottom: 20px
-}
+    .section-price--item {
+        margin-left: 20px;
+        min-width: calc(100% - 40px);
+        margin-bottom: 20px
+    }
+
+    .section-price--item:last-child {
+        margin-right: 20px;
+    }
+
+    .section-premium .slidearea {
+        flex-direction: column;
+    }
+
+    .section-premium--left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .section-premium--right {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
 
+    .section-facts {
+        flex-wrap: wrap;
+    }
 
+    .section-fact {
+        min-width: 100%;
+    }
+
+    .section-share {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .section-share--legend {
+        width: 100vw;
+        margin: 0;
+        margin-bottom: 30px;
+        justify-content: center;
+
+    }
+
+    .section-share--legend {
+        width: 100vw;
+        margin: 0;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .section-share--item {
+        min-width: 50%;
+        max-width: 50%;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .section-contact {
+        max-width: 100vw;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-contact--split {
+        flex-direction: column;
+    }
 
 
 
     .section-map {
         padding: 0;
         padding-bottom: 250px;
+    }
+
+    .section-map--area {
+        width: auto;
     }
 
     .section-map--info {
@@ -1399,4 +1461,15 @@ CSS DE ÁREAS ESPECÍFICAS
         margin-bottom: 0;
     }
 
+    .footer--area {
+        flex-direction: column;
+    }
+
+    .footer--item {
+        margin-bottom: 20px;
+    }
+
+    .footer--social {
+        justify-content: center;
+    }
 }
